@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Hoàng Tín - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+    <header>
+        <h1>Trần Hoàng Tín</h1>
+        <p>Web Developer | Full-Stack Enthusiast</p>
+    </header>
+    <section id="about">
+        <h2>Giới Thiệu</h2>
+        <img src="assets/img/htinn.jpg" alt="Trần Hoàng Tín" class="profile-img">
+        <p>Xin chào! Tôi là Trần Hoàng Tín, một lập trình viên web đam mê công nghệ và phát triển ứng dụng. Tôi có kinh nghiệm trong việc xây dựng website với Spring Boot, tích hợp API và tối ưu hiệu suất hệ thống. Luôn sẵn sàng học hỏi công nghệ mới và phát triển bản thân để trở thành một Web Developer chuyên nghiệp.</p>
+        <p>Tôi yêu thích lập trình và luôn tìm kiếm những thử thách mới để nâng cao kỹ năng. Tôi đặc biệt quan tâm đến các công nghệ backend và hệ thống phân tán, mong muốn xây dựng các ứng dụng web mạnh mẽ và hiệu quả. Bên cạnh đó, tôi cũng không ngừng trau dồi kiến thức về frontend để tạo ra những trải nghiệm người dùng tốt nhất.</p>
+        <p>Trong thời gian rảnh, tôi thường nghiên cứu về các framework mới, đóng góp vào các dự án mã nguồn mở và viết blog chia sẻ kiến thức về lập trình. Tôi tin rằng sự kiên trì và tinh thần học hỏi không ngừng chính là chìa khóa giúp tôi phát triển trong ngành công nghệ.</p>
+    </section>
+    <section id="experience">
+        <h2>Kinh Nghiệm thực tập</h2>
+        <p>Hiện đang thực tập tại CodeFresh.</p>
+        <p>Tham gia các dự án thực tế về phát triển web và hệ thống API.</p>
+    </section>
+    <section id="skills">
+        <h2>Các Ngôn Ngữ & Kỹ Năng</h2>
+        <ul id="skill-list"></ul>
+    </section>
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <p class="contact">Email: <a href="mailto:trantin064@gmail.com">trantin064@gmail.com</a></p>
+        <p class="contact">GitHub: <a href="https://github.com/TrHoangTin" target="_blank">https://github.com/TrHoangTin</a></p>
+        
+    </section>
+    <footer>
+        <p>&copy; 2025 Trần Hoàng Tín</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skills = ["Java", "HTML & CSS", "JavaScript", "Spring Boot", "SQL", "React", "Node.js", "REST API", "MongoDB"];
+            const skillList = document.getElementById("skill-list");
+            skillList.innerHTML = "";
+            skills.forEach(skill => {
+                const li = document.createElement("li");
+                li.textContent = skill;
+                skillList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
